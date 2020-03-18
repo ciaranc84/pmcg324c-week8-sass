@@ -1,0 +1,51 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import 'colors';
+
+
+@mixin thickroundedborder($bordersize, $bordercolor, $radius) {
+	border: $bordersize solid $bordercolor;
+	border-radius: $radius;
+}
+
+.foo {
+	font-size: 24px;
+
+	li {
+		// border: 1px solid $darkerblue;
+		padding: 0.8em;
+	}
+}
+
+@function blend-with-yellow($color, $amount: 50%) {
+	@return mix(yellow, $color, $amount)
+}
+
+.a {
+	color: $darkerblue;
+	background-color: blend-with-yellow($lighterblue);
+	@include thickroundedborder(6px, pink, 3px);
+}
+
+.b {
+	color: $darkblue;
+	background-color: $lightblue;
+	@include thickroundedborder(12px, yellow, 6px);
+}
+
+.c {
+	color: white;
+	background-color: $blue;
+	@include thickroundedborder(6px, pink, 9px);
+}
+
+.d {
+	color: $lightblue;
+	background-color: $darkblue;
+	@include thickroundedborder(12px, yellow, 12px);	
+}
+
+.e {
+	color: $lighterblue;
+	background-color: blend-with-yellow($darkerblue, 70%);
+	@include thickroundedborder(6px, pink, 15px);
+}

@@ -1,0 +1,53 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/* colors */
+/* line 10, ../../../../../../../../../../../../../Users/karlhohn/code/pmcg324c-week8-sass/src/base.scss */
+.foo {
+  font-size: 24px;
+}
+
+/* line 13, ../../../../../../../../../../../../../Users/karlhohn/code/pmcg324c-week8-sass/src/base.scss */
+.foo li {
+  padding: 0.8em;
+}
+
+/* line 23, ../../../../../../../../../../../../../Users/karlhohn/code/pmcg324c-week8-sass/src/base.scss */
+.a {
+  color: black;
+  background-color: #a7a780;
+  border: 6px solid pink;
+  border-radius: 3px;
+}
+
+/* line 29, ../../../../../../../../../../../../../Users/karlhohn/code/pmcg324c-week8-sass/src/base.scss */
+.b {
+  color: #00001c;
+  background-color: #0000e8;
+  border: 12px solid yellow;
+  border-radius: 6px;
+}
+
+/* line 35, ../../../../../../../../../../../../../Users/karlhohn/code/pmcg324c-week8-sass/src/base.scss */
+.c {
+  color: white;
+  background-color: #000082;
+  border: 6px solid pink;
+  border-radius: 9px;
+}
+
+/* line 41, ../../../../../../../../../../../../../Users/karlhohn/code/pmcg324c-week8-sass/src/base.scss */
+.d {
+  color: #0000e8;
+  background-color: #00001c;
+  border: 12px solid yellow;
+  border-radius: 12px;
+}
+
+/* line 47, ../../../../../../../../../../../../../Users/karlhohn/code/pmcg324c-week8-sass/src/base.scss */
+.e {
+  color: #4f4fff;
+  background-color: #b3b300;
+  border: 6px solid pink;
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=base.css.map */

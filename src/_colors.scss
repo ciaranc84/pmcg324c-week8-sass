@@ -1,0 +1,7 @@
+/* colors */
+
+$blue: rgb(0, 0, 130);
+$lighterblue: lighten($blue, 40%);
+$lightblue: lighten($blue, 20%);
+$darkblue: darken($blue, 20%);
+$darkerblue: darken($blue, 40%);

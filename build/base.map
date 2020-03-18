@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "base.css",
+	"sources": [
+		"../src/base.scss",
+		"../src/_colors.scss"
+	],
+	"sourcesContent": [
+		"@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');\n@import 'colors';\n\n\n@mixin thickroundedborder($bordersize, $bordercolor, $radius) {\n\tborder: $bordersize solid $bordercolor;\n\tborder-radius: $radius;\n}\n\n.foo {\n\tfont-size: 24px;\n\n\tli {\n\t\t// border: 1px solid $darkerblue;\n\t\tpadding: 0.8em;\n\t}\n}\n\n@function blend-with-yellow($color, $amount: 50%) {\n\t@return mix(yellow, $color, $amount)\n}\n\n.a {\n\tcolor: $darkerblue;\n\tbackground-color: blend-with-yellow($lighterblue);\n\t@include thickroundedborder(6px, pink, 3px);\n}\n\n.b {\n\tcolor: $darkblue;\n\tbackground-color: $lightblue;\n\t@include thickroundedborder(12px, yellow, 6px);\n}\n\n.c {\n\tcolor: white;\n\tbackground-color: $blue;\n\t@include thickroundedborder(6px, pink, 9px);\n}\n\n.d {\n\tcolor: $lightblue;\n\tbackground-color: $darkblue;\n\t@include thickroundedborder(12px, yellow, 12px);\t\n}\n\n.e {\n\tcolor: $lighterblue;\n\tbackground-color: blend-with-yellow($darkerblue, 70%);\n\t@include thickroundedborder(6px, pink, 15px);\n}",
+		"/* colors */\n\n$blue: rgb(0, 0, 130);\n$lighterblue: lighten($blue, 40%);\n$lightblue: lighten($blue, 20%);\n$darkblue: darken($blue, 20%);\n$darkerblue: darken($blue, 40%);"
+	],
+	"names": [],
+	"mappings": "AAAA,OAAO,CAAC,+EAAI;ACAZ,YAAY;;ADSZ,AAAA,IAAI,CAAC;EACJ,SAAS,EAAE,IAAI;CAMf;;;AAPD,AAGC,IAHG,CAGH,EAAE,CAAC;EAEF,OAAO,EAAE,KAAK;CACd;;;AAOF,AAAA,EAAE,CAAC;EACF,KAAK,ECjBO,KAAkB;EDkB9B,gBAAgB,EALR,OAA4B;EAdpC,MAAM,EAoBsB,GAAG,CApBX,KAAK,CAoBQ,IAAI;EAnBrC,aAAa,EAmB0B,GAAG;CAC1C;;;AAED,AAAA,EAAE,CAAC;EACF,KAAK,ECxBK,OAAkB;EDyB5B,gBAAgB,EC1BL,OAAmB;EDC9B,MAAM,EA0BsB,IAAI,CA1BZ,KAAK,CA0BS,MAAM;EAzBxC,aAAa,EAyB6B,GAAG;CAC7C;;;AAED,AAAA,EAAE,CAAC;EACF,KAAK,EAAE,KAAK;EACZ,gBAAgB,EClCV,OAAc;EDGpB,MAAM,EAgCsB,GAAG,CAhCX,KAAK,CAgCQ,IAAI;EA/BrC,aAAa,EA+B0B,GAAG;CAC1C;;;AAED,AAAA,EAAE,CAAC;EACF,KAAK,ECrCM,OAAmB;EDsC9B,gBAAgB,ECrCN,OAAkB;EDA5B,MAAM,EAsCsB,IAAI,CAtCZ,KAAK,CAsCS,MAAM;EArCxC,aAAa,EAqC6B,IAAI;CAC9C;;;AAED,AAAA,EAAE,CAAC;EACF,KAAK,EC5CQ,OAAmB;ED6ChC,gBAAgB,EA7BR,OAA4B;EAdpC,MAAM,EA4CsB,GAAG,CA5CX,KAAK,CA4CQ,IAAI;EA3CrC,aAAa,EA2C0B,IAAI;CAC3C"
+}
