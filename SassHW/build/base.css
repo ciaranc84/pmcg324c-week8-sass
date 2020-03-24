@@ -1,0 +1,27 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 30rem;
+  width: 100%;
+  border: 10px solid black;
+}
+
+.content .a {
+  background-color: #6666ff;
+  border-style: solid;
+  border: black;
+  border-width: 20px;
+}
+
+.content .b {
+  background-color: chartreuse;
+}
+
+.content .c {
+  background-color: crimson;
+}
+
+.content .d {
+  background-color: cyan;
+}

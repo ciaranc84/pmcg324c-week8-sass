@@ -1,0 +1,30 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import 'margin';
+
+
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 30rem;
+    width: 100%;
+    border: $border;
+    ;
+
+    .a {
+        background-color: $light;
+        border-style: solid;
+        border: black;
+        border-width: 20px;
+    }
+    .b {
+        background-color: chartreuse;
+    }
+    .c {
+        background-color: crimson;
+    }
+    .d {
+        background-color: cyan;
+    }
+}
+
